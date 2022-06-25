@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    /* Navbar */ 
+    
+    .navbar{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    }
+    
+    .navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+    }
+    
+    .navbar ul li{
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+    }
+    
+    .navbar ul li a{
+    text-decoration: none;
+    color: pink;
+    padding: 8px 25px;
+    transition: all.5s ease;
+    }
+    
+    .navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+    }
+    
+    /* Layout */
+html, body {
+	background: black;
+	margin: 0;
+	padding: 0 0 15px;
+}
+article {
+	margin: auto;
+	max-width: 1000px;
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+	grid-gap: .5em;
+}
+h1, cite, img, aside, main {
+	grid-column: 2;
+}
+main {
+	max-width: 450px;
+	margin: auto;
+	text-align: justify;
+}
+img {
+	width: 100%;
+}
+p:first-child {
+	margin-top: 0;
+}
+p:last-child::after {
+	content: ' ■';
+	opacity: 0.2;
+}
+/* Title Layout */
+h1 span {
+	display: block;
+}
+.focusing {
+	margin-bottom: -10px;
+}
+.the {
+	transform: translateY(50%);
+	background: #eee3c8;
+	width: 50px;
+	margin: auto;
+}
+.heart {
+	border: thin solid black;
+	border-width: thin 0;
+	padding: 10px 0 0;
+}
+/* Typography */
+h1 {
+	text-align: center;
+}
+.focusing {
+	font-family: 'questa-grande';
+	text-transform: uppercase;
+	font-size: 1em;
+}
+.the {
+	font-family: 'brandon-grotesque';
+	text-transform: uppercase;
+	font-size: 0.5em;
+}
+.heart {
+	font-family: 'ltc-bodoni-175';
+	text-transform: uppercase;
+	font-size: 1.5em;
+}
+cite {
+	font-family: 'brandon-grotesque';
+	font-style: normal;
+	text-transform: uppercase;
+	text-align: center;
+}
+.name {
+	font-weight: 900;
+}
+main {
+	font-family: 'abril-text';
+}
+.dropcap {
+	font-family: 'brandon-grotesque';
+	text-transform: uppercase;
+	font-size: 0.9em;
+	letter-spacing: 0.1em;
+}
+aside {
+	font-family: 'brandon-grotesque';
+	font-style: italic;
+	text-align: right;
+}
+
+
+@media only screen and (min-width:750px) {
+	/* Layout */
+	html, body { padding: 30px 0; }
+	article {
+		grid-template-columns: 1fr 3fr 1fr;
+		grid-gap: 1.5em;
+        color:pink;
+	}
+	main {
+		margin-left:10%;
+        margin-right:10%;
+	}
+	aside {
+		grid-column: 1;
+		grid-row: 4;
+		margin-top: 7em;
+	}
+	/* Title */
+	.focusing {
+		font-size: 2.2em;
+		margin-bottom: -15px;
+        color:pink;
+	}
+	.the {
+		font-size: 0.75em;
+        color:pink;
+        background-color: black;
+	}
+	.heart {
+		font-size: 4em;
+        color:pink;
+	}
+}
+
+
+
+/* Demo styles
+-------------------------------------------------------------- */
+
+body {
+	line-height: 25px;
+	color: #666;
+	margin: 0;
+	font-family: century;
+  }
+  
+  
+  /* The base styles for frame & steps
+  -------------------------------------------------------------- */
+  
+  .auto-steps {
+	
+	border-bottom: 1px solid pink;
+	background:pink;
+	padding: 30px 40px;
+  }
+  
+  .auto-steps h3 {
+	line-height: 25px;
+	margin: 50px 0 25px;
+	position: relative;
+	color: black;
+	text-align: center;
+  }
+  
+  .auto-steps h3::before {
+
+	/* style */
+	background: #353535;
+	border: 5px solid #fff;
+	color: #fff;
+	font-size: 10px;
+	text-align: center;
+	border-radius: 50%;
+	box-shadow: -5px 0 5px rgba(0, 0, 0, 0.2);
+	/* sizing */
+	box-sizing: content-box;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	margin-right: 10px;
+	margin-top: -20px;
+	/* mobile first postition */
+	float: left;
+  }
+  
+  h2{
+	text-align: center;
+	color:black;
+  }
+
+
+  .pdesign{
+text-align: justify;
+color: black;
+  }
+  /* The larger viewport styles for frame & steps
+  -------------------------------------------------------------- */
+  
+  @media ( min-width: 480px) {
+	.auto-steps h3::before {
+	  position: absolute;
+	  left: -70px;
+	}
+	.auto-steps {
+	  box-shadow: 0 0 100px rgba(0, 0, 0, 0.15);
+	  max-width: 500px;
+	  position: relative;
+	  margin: 40px auto;
+	  border: 30px solid rgba(255, 255, 255, 0.25);
+	  background-clip: padding-box;
+	}
+  }
+
+  footer{
+	text-align: center;
+	font-size: 15px;
+	font-family: century;
+	color:pink;
+  }

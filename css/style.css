@@ -1,0 +1,485 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* Navbar */ 
+
+.navbar{
+display: flex;
+justify-content: center;
+background-color: rgba(0, 0, 0, 0.5);
+position: sticky;
+top: 0;
+}
+
+.navbar ul{
+display: flex;
+list-style: none;
+margin: 20px 0px;
+}
+
+.navbar ul li{
+font-family: century;
+font-size: 1.1rem;
+font-weight: bold;
+}
+
+.navbar ul li a{
+text-decoration: none;
+color: pink;
+padding: 8px 25px;
+transition: all.5s ease;
+}
+
+.navbar ul li a:hover{
+background-color: white;
+color: black;
+box-shadow: 0 0 10px white;
+}
+
+/*Home Section*/
+#home{
+display:flex;
+flex-direction: column;
+background-color: rgba(0, 0, 0, 0.5);
+height:840px;
+justify-content: center;
+align-items: center;
+color:white;
+}
+
+#home::before{
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    background: url('ST.jpg') no-repeat center center/cover;
+    height:900px;
+    width:100%;
+    z-index:-1;
+    opacity:.8;
+}
+
+.main{
+display:flex;
+flex-direction: column;
+/*border:1px solid white;*/ 
+align-items:center;
+position: absolute;
+top:30%;
+right:10%;
+}
+
+.headings{
+    font-family: century;
+    font-size: 3rem;
+text-align: center;
+margin:40px 0px;
+color:pink;
+margin-left:10%;
+}
+
+.headingsss{
+    font-family: century;
+    font-size: 3rem;
+text-align: center;
+margin:40px 0px;
+color :black;
+background-color:pink;
+}
+
+.btn{
+padding:10px 35px;
+background-color: transparent;
+border:1px solid white;
+color:white;
+outline:none;
+transition: .6s ease;
+margin-left:10%;
+}
+
+.btn:hover{
+cursor:pointer;
+background-color: white;
+color:black;
+box-shadow: 0 0 5px white, 0 0 5px white, 0 0 5px white ;
+font-weight: bold;
+}
+.btn a{
+color:white; 
+text-decoration:none;
+font-weight:bold;
+}
+
+
+
+.jj{
+color:pink;
+text-align:center;
+margin-left:10%;
+background-color: black;
+border-radius: 10px;
+font-size:30px;
+font-family: century;
+}
+
+
+
+
+
+
+/*About Section*/ 
+
+
+
+#about{
+display: flex;
+flex-direction: column;
+box-sizing: border-box;
+padding:20px;
+margin-bottom: 50px;
+}
+
+#pic{
+display:flex; 
+width:20%;
+height:20%;
+justify-items:right;
+
+}
+
+#pic img{
+width:575px;
+height:400px;
+justify-items:center;
+padding:20px;
+margin-left: 25px;
+margin-right: 5px;
+}
+#intro{
+display:flex;
+flex-direction: column;
+padding:10px; 
+color:whitesmoke;
+}
+
+#intro h2{
+    font-family: century;
+font-size:  2rem;
+margin-bottom: 20px;
+text-align: center;
+color:pink; 
+}
+
+#intro p{
+justify-content: center;
+color:beige;
+
+}
+
+body {
+background-color: black;
+}
+
+p{
+color:white; 
+font-size:20px; 
+color:black;
+}
+
+
+.box-container{
+display:flex;
+color:white;
+flex-wrap: wrap;
+gap:5rem;
+padding: 0.5rem 0; 
+background-color: pink;
+border-radius: 10px;
+font-family: century;
+font-size:10px;
+align-items:justify;
+}
+
+.box-container .box span{
+flex: 1 1 20rem;
+color:black; 
+font-weight: bold;
+margin:2px;
+
+}
+
+/* Skills Section*/
+
+@import url("https://fonts.googleapis.com/css?family=Lato:300");
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato";
+  font-size: 16px;
+}
+
+/*** <--- CIRCLE STYLES ---> ***/
+.wrap-circles {
+  display: flex;
+  min-height: 100vh;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  background: #000;
+}
+
+h2{
+color:pink;
+text-align:center;
+font-family: century;
+font-weight:bold;
+
+
+}
+.circle {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  margin: 2rem;
+  border-radius: 50%;
+  background: #FFCDB2;
+  overflow: hidden;
+}
+.circle.per-90 {
+  background-image: conic-gradient(#B5838D 90%, #FFCDB2 0);
+}
+.circle.per-90 {
+  background-image: conic-gradient(#B5838D 90%, #FFCDB2 0);
+}
+.circle.per-80 {
+  background-image: conic-gradient(#B5838D 80%, #FFCDB2 0);
+}
+
+
+
+.circle .inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 115px;
+  height: 115px;
+  background: #000;
+  border-radius: 50%;
+  font-size: 1.85em;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.h33{
+color:pink;
+text-align: center!important;
+margin-top:0.5rem!important;
+}
+
+   
+/*Education Section*/ 
+
+
+h2{
+  font-weight:bold;
+
+}
+
+.timeline {
+  position: relative;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background: pink;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+
+.container {
+  padding: 15px 30px;
+  position: relative;
+  background: inherit;
+  width: 50%;
+}
+
+.container.left {
+  left: 0;
+}
+
+.container.right {
+  left: 50%;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: calc(50% - 8px);
+  right: -8px;
+  background:black ;
+  border: 2px solid pink ;
+  border-radius: 16px;
+  z-index: 1;
+}
+
+.container.right::after {
+  left: -8px;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  top: calc(50% - 1px);
+  right: 8px;
+  background: pink;
+  z-index: 1;
+}
+
+.container.right::before {
+  left: 8px;
+}
+
+.container .date {
+  position: absolute;
+  display: inline-block;
+  top: calc(50% - 8px);
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color:pink;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 1;
+  margin:-10px;
+  padding:-5px;
+}
+
+.container.left .date {
+  right: -75px;
+}
+
+.container.right .date {
+  left: -75px;
+}
+
+.container .icon {
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  padding: 9px 0;
+  top: calc(50% - 20px);
+  background: black;
+  border: 2px solid black;
+  border-radius: 40px;
+  text-align: center;
+  font-size: 18px;
+  color: black;
+  z-index: 1;
+}
+
+.container.left .icon {
+  right: 56px;
+}
+
+.container.right .icon {
+  left: 56px;
+}
+
+.container .content {
+  padding: 30px 90px 30px 30px;
+  background: pink;
+  position: relative;
+  border-radius: 0 500px 500px 0;
+  font-family:century;
+}
+
+.container.right .content {
+  padding: 30px 30px 30px 90px;
+  border-radius: 500px 0 0 500px;
+}
+
+.container .content h2 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+font-family:century;
+}
+
+.container .content p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+  text-align:justify;
+  font-family:century;
+}
+
+@media (max-width: 767.98px) {
+  .timeline::after {
+    left: 90px;
+  }
+
+  .container {
+    width: 100%;
+    padding-left: 120px;
+    padding-right: 30px;
+  }
+
+  .container.right {
+    left: 0%;
+  }
+
+  .container.left::after, 
+  .container.right::after {
+    left: 82px;
+  }
+
+  .container.left::before,
+  .container.right::before {
+    left: 100px;
+    border-color: transparent #006E51 transparent transparent;
+  }
+
+  .container.left .date,
+  .container.right .date {
+    right: auto;
+    left: 15px;
+  }
+
+  .container.left .icon,
+  .container.right .icon {
+    right: auto;
+    left: 146px;
+  }
+
+  .container.left .content,
+  .container.right .content {
+    padding: 30px 30px 30px 90px;
+    border-radius: 500px 0 0 500px;
+  }
+
+ 
